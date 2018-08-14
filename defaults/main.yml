@@ -4,9 +4,9 @@
 zabbix_version: 3.4
 zabbix_repo: zabbix
 zabbix_agent_packages:
-  - zabbix-agent
-  - zabbix-sender
-  - zabbix-get
+  - 'zabbix-agent=1:{{zabbix_version}}*'
+  - 'zabbix-sender=1:{{zabbix_version}}*'
+  - 'zabbix-get=1:{{zabbix_version}}*'
 
 zabbix_agent_package_state: present
 zabbix_agent_server:
